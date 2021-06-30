@@ -1,0 +1,297 @@
+*
+{
+    box-sizing: border-box;
+}
+
+header
+{
+    background-color: cornflowerblue;
+}
+
+#missedName
+{
+    color: red;
+    display: none;
+}
+#hidden
+{
+    padding: 10px;
+    display: none;
+    visibility: hidden;
+}
+#hidden3
+{
+    display:none;
+    visibility: hidden;
+    padding: 10px;
+}
+
+#missedEmail
+{
+    color: red;
+    display: none;
+}
+.text1
+{
+    width: 35%;
+    float: left;
+    text-align: right;
+}
+#shortFeedback
+{
+    display: none;
+    color: red;
+}
+.evaluation
+{
+    width: 65%;
+    float: right;
+}
+
+#btn1
+{
+    color: slategray;
+}
+@media only screen and (max-width: 601px)
+{
+
+    .img
+    {
+        background-color: cornflowerblue;
+        padding: 10px;
+    }
+    [class*="col-"]
+    {
+        float: left;
+        padding: 15px;
+    }
+
+
+    .side
+    {
+        background-color: cornflowerblue;
+        padding: 15px;
+        display: inline;
+        width: 75%;
+        height: 61px;
+        float: left;
+    }
+
+    #menubar
+    {
+        display: inline;
+        background-color: cornflowerblue;
+        float: right;
+        text-align: right;
+        padding-right: 10px;
+        width: 25%;
+
+    }
+
+    ul
+    {
+             list-style-type: none;
+    }
+
+    nav.menu
+    {
+        display: none;
+    }
+
+    .footer
+    {
+        background-color: cornflowerblue;
+    }
+    .text1
+    {
+        display: block;
+        text-align: left;
+    }
+    .evaluation
+    {
+        display: block;
+    }
+
+    .col-2
+    {
+        width: 100%;
+    }
+
+    .col-5
+    {
+        background-color: cornflowerblue;
+        width: 100%;
+    }
+    .col-6
+    {
+        display: none;
+    }
+    .col-7
+    {
+        display: none;
+    }
+
+
+    .alibi
+    {
+        visibility: hidden;
+    }
+
+    .footer2
+    {
+        display: none;
+    }
+}
+/************************************************************************************/
+@media only screen and (min-width: 601px)
+{
+
+    .menu
+    {
+        display: inline;
+        text-decoration: none;
+        width: 65%;
+    }
+
+
+    .side
+    {
+        float: left;
+        padding: 10px;
+        width: 35%;
+    }
+
+    .menu ul
+    {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        width: 65%;
+
+    }
+
+    .menu li
+    {
+        padding: 10px;
+        text-align: right;
+        float: right;
+    }
+
+    a:visited
+    {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    a:link
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover
+    {
+        background-color: dodgerblue;
+        padding: 61px;
+    }
+
+    #menubar
+    {
+        display: none;
+    }
+
+    .main
+    {
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    #TextField1
+    {
+        display: none;
+    }
+
+    .text1
+    {
+        display: block;
+        text-align: left;
+    }
+    .evaluation
+    {
+        display: block;
+    }
+
+    .col-1
+    {
+        text-align: center;
+
+    }
+    .col-2
+    {
+        float:left;
+        text-align: right;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .col-3
+    {
+        float: right;
+        text-align: left;
+        width: 55%;
+        padding: 10px;
+    }
+
+
+    .footer2
+    {
+
+    }
+    .footer2 ul
+    {
+        background-color: cornflowerblue;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer2 li
+    {
+        display: inline;
+        float: left;
+        padding: 10px;
+    }
+
+    .alibi
+    {
+        visibility: hidden;
+    }
+
+    .footer
+    {
+        display: none;
+    }
+
+    #left
+    {
+        text-align: left;
+        width:33%;
+    }
+
+    #center
+    {
+        text-align: center;
+        width: 33%;
+    }
+
+    #right
+    {
+        float: right;
+        width: 33%;
+        text-align: right;
+    }
+
+}

@@ -1,0 +1,91 @@
+
+    .header
+    {
+        background-color: cornflowerblue;
+        width: 100%;
+    }
+
+    footer
+    {
+        background-color: cornflowerblue;
+    }
+
+    #myTopnav
+    {
+
+        font-family: "Arial Black";
+        font-size: large;
+        word-spacing: 10px;
+        text-align: right;
+        background-color: lightslategrey;
+        text-effect: none;
+
+    }
+
+    a:link
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited
+    {
+        background-color: deepskyblue;
+        color: slategray;
+    }
+
+    a:hover
+    {
+        background-color: cornflowerblue;
+
+    }
+
+    a:active
+    {
+
+        text-decoration: lightblue;
+
+    }
+
+
+    *{
+
+        box-sizing: border-box;
+
+    }
+
+    .menu
+    {
+
+        width: 25%;
+        float: left;
+
+    }
+
+    .main
+    {
+
+        width: 75%;
+        float: left;
+
+    }
+
+    .row::after
+    {
+
+        content: "";
+        clear: both;
+        display: table;
+
+    }
+
+    .col-3
+    {
+
+        text-align:center;
+        width: 100%;
+
+    }
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>h1Abfrage</title>
+
+    </head>
+
+
+    <body>
+        <h1>Diese Überschrift wird zuerst abgefragt und anschliessend ausgegeben</h1>
+
+        <p>Hello World</p>
+
+        <h1>Teste ob die Anzeige vom Index des Arrays abhängig ist </h1>
+
+        <!--Dekarierung des Button elements durch onclick wird darauf verwiesen das die Funktion transfer
+        gestartet werden soll-->
+        <button onclick="transfer()">Enter</button>
+
+
+            <script type="text/javascript">
+
+                /*Die Variable heading bezieht die Daten innerhalb des ersten h1 Tag */
+                var heading = document.getElementsByTagName("h1")[0];
+                    /*die Variable heading nimmt den Wert des Inhalts des h1Tags an durch innerHTML*/
+                    heading.getElementsByTagName("h1")[0].innerHTML = heading;
+
+                /*Deklarierung der Funktion transfer die angibt was zu tun ist,
+                 falls der Butten gedrückt wird*/
+                function transfer()
+                {
+                    alert(heading.firstChild.nodeValue);
+                }
+
+            </script>
+
+    </body>
+
+</html>

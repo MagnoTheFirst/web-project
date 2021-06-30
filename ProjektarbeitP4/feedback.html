@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="feedbackdesign.css">
+    <script src="bestellformular.js"></script>
+    <title>Tony's Pizza Factory</title>
+</head>
+        <body>
+            <header>
+                <div class="side">Tony's Pizza Factory</div>
+
+                <nav class="menu">
+                    <ul>
+                        <li> <a href=""> Home</a></li>
+                        <li><a href=""> Pizza</a></li>
+                        <li> <a href=""> Salad</a></li>
+                        <li> <a href=""> Drinks</a></li>
+                        <li><a href=""> Feedback</a></li>
+                    </ul>
+                </nav>
+
+            <section id="menubar">
+                <ul>
+                    <li><a class="menubutton" href="menu" ><img src="menu.png"></a></li>
+                </ul>
+            </section>
+
+            </header>
+
+
+            <section class="main">
+            <div class="col-1"><h1>Tell us what you think</h1></div>
+            <div class="col-2">
+                How do you like our pizza? *
+            </div>
+                <form id="pizza">
+                    <div class="col-3">
+
+                            <input type="radio" name="evaluation" value="Awsome"> Awsome
+                            <input type="radio" name="evaluation" value="Good"> Good
+                            <input type="radio" name="evaluation" value="Okay"> Okay
+                            <input type="radio" name="evaluation" value="Poor"> Poor
+                    </div>
+                    <div class="col-2">
+                        What do you think about our prizes? *
+                    </div>
+                    <div class="col-3">
+                        <input type="radio" name="prizes" value="Fair"> Fair
+                        <input type="radio" name="prizes" value="Okay"> Okay
+                        <input type="radio" name="prizes" value="Expensive"> Expensive
+                    </div>
+                <div class="col-2">
+                    Your name*
+                </div>
+                <div class="col-3">
+                    <input type="text"  name="Name" placeholder="Name" id="NAME">
+                </div>
+                <div class="col-3" id="missedName">bla</div>
+
+                <div class="col-2">
+                    <div id="hidden">00000</div>
+                    Your e-mail address*
+                </div>
+                <div class="col-3">
+                    <input type="text"  name="email" placeholder="your.mail@e-mail.com" id="email">
+                </div>
+                <div class="col-3" id="missedEmail"></div>
+                <div class="col-2">
+                    <div id="hidden3">dfsg</div>
+                    What can we do better?*
+                </div>
+                <div class="col-3">
+                    <textarea rows="10" cols="40" maxlength="100" id="TextField2"></textarea>
+                </div>
+                <div class=col-3>
+                    <div id="shortFeedback">aefsgrh</div>
+                   <button type="button" onclick="senden()" id="btn1">Senden</button>
+
+                </div>
+                </form>
+
+            </section>
+            <!-- <button class="col-3" type="button" onclick="test()">test</button> -->
+            <section class="footer">
+                <div class="col-5">
+                    <p>
+                    Hours:<br>
+                    Mon-Thu: 11am - 23pm<br>
+                    Fri - Sat: 11am - 24pm<br>
+                    Sunday closed
+                    </p>
+                </div>
+                    <div class="col-6">
+                        <p>
+                        "The Pizzeria is one place I have been<br>
+                        wantin to visit for a long time. <br>
+                        The reason being there Napoli pizza wich<br>
+                        absolutly blew me away." -Jimmy"
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        <p>
+                        Adress:<br>
+                        Tony's Pizza Factory<br>
+                        2122 N Clark St<br>
+                        Chicago, IL 60614, USA<br>
+                        </p>
+                    </div>
+            </section>
+                <section class="footer2">
+                  <ul>
+                    <li id="left">
+                        <p>
+                            Hours:<br>
+                            Mon-Thu: 11am - 23pm<br>
+                            Fri - Sat: 11am - 24pm<br>
+                            Sunday closed
+                        </p>
+                    </li>
+                    <li id="center">
+                        <p>
+                            "The Pizzeria is one place I have been<br>
+                            wantin to visit for a long time. <br>
+                            The reason being there Napoli pizza wich<br>
+                            absolutly blew me away." -Jimmy"
+                        </p>
+                    </li>
+                    <li id="right">
+                        <p>
+                            Adress:<br>
+                            Tony's Pizza Factory<br>
+                            2122 N Clark St<br>
+                            Chicago, IL 60614, USA<br>
+                        </p>
+                    </li>
+                  </ul>
+                </section>
+
+        </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>U2</title>
+</head>
+<body>
+<h1>Liste aller Titel</h1>
+<div id="text"></div>
+<script>
+    var xml = new XMLHttpRequest();
+    xml.open("GET", "https://jsonplaceholder.typicode.com/todos");
+    xml.send();
+    xml.onload = function()
+    {
+
+        var data = JSON.parse(xml.responseText);
+        document.getElementById("text").innerHTML = data[0].title;
+        for(var i = 0; i < data.length; i++)
+        {
+            //alert(data[i].title);
+            var list = document.createElement('ul');
+            document.getElementById('text').appendChild(list);
+            var tag = document.createElement('li');
+            list.appendChild(tag);
+            tag.innerHTML += data[i].title;
+        }
+    };
+</script>
+</body>
+</html>

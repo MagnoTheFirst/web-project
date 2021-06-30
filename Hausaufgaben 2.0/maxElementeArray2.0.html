@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Maximal Element in Array</title>
+        </head>
+
+        <body>
+        <!--Die Überschrifft-->
+        <h1>Diese Seite Zeigt das Element mit dem höchsten Wert im Array elemente an </h1>
+
+        <!--Der Paragraf wird durch drücken des Enter Buttons geändert-->
+        <p>Hier wird der Wert des Arrays angezeigt.</p>
+
+        <!--Enterbutton der die Funktion getMaxArrayElement aufruft.-->
+        <button onclick="getMaxArrayElement()">Enter</button>
+
+            <script>
+             //Deklaration des Arrays
+             var elemente = [10, 20, 30, 40, 50];
+
+
+             //Funktion die das rechnen startet
+             function getMaxArrayElement()
+             {
+
+
+                 //Zähler der Anzahl an Elementen in einem Array
+                 var anzahlE = elemente.length;
+                 //Itterator der nach jedem Schleifendurchlauf die Position im Array annimmt.
+                 var i = 0;
+
+
+                 while (i < anzahlE)
+                 {
+                     //Variable nimmt bei jedem Schleifendurchlauf den Wert des aktuellen Elements an.
+                     var initialWert = elemente[i];
+
+                     //Schleife die der Variable immer den Höchsten Wert zuordnet.
+                     if (initialWert <= elemente[i])
+                     {
+                         var hoehererWert = elemente[i];
+                     }
+
+                     /*Der Höchste Wert wird der Variable maximalWert am Ende der Schleife zugeordnet damit diese,
+                     *für die Anzeige verwendet werden kann.
+                     */
+                     var maximalWert = hoehererWert;
+                     ++i;
+                 }
+                 //Sobald alle Index durchlaufen Wurde wird die Anzeige erarbeitet.
+                 if(i == anzahlE)
+                 {
+                     //Variable Text enthält die Anzeige als auch den Wert der Variable maximalWert
+                     var text1 = "Der höchste Wert im Array elemente ist " + maximalWert + ".";
+                     //anzeige dient der Umwandlung des Paragrafs
+                     var anzeige;
+
+                     //ich lasse alert gerne im Skript bestehen aus eigenen lernzwecken.
+                     alert(maximalWert);
+
+                     //Dem ersten Paragraf wird dann die Variable text zugewiesen.
+                     anzeige = document.getElementsByTagName("p")[0].innerHTML = text1;
+                     anzeige.getElementbyTagName("p")[0].innerHTML = text1;
+                 }
+             }
+             //Ende des Skripts
+
+                //Test Kommentar schwierigkeiten die Programme hoch zu laden
+            </script>
+        </body>
+</html>

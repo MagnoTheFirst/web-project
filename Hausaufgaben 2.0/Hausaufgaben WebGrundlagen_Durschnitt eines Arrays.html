@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Avarage of Array</title>
+    </head>
+    <body>
+
+    <!--Überschrift-->
+    <h1>Durchnitt der Werte eines Arrays</h1>
+
+    <!--Textfelder die angezeigt und nach click des zugeordneten Buttons ändern -->
+    <p id="anzeige">Durchschnitt des Arrays</p>
+    <p id="nr">Anzahl Elemente im Array</p>
+    <p id="total">Summe aller Werte die den Elemente im Array zugeordnet sind.</p>
+
+    <!--Deklaration der Button Elemente -->
+    <button onclick="btnDurchschnitt()">Durchschnitt</button>
+    <button onclick="btnAnzahl()">Anzahl der Elemente</button>
+    <button onclick="btnSumme()">Summe</button>
+
+        <!--Logik der Button Elemente -->
+        <script type="text/javascript">
+
+            <!--Deklaration des Arrays-->
+            var elemente = [];
+            elemente[0] = 10;
+            elemente[1] = 10;
+            elemente[2] = 10;
+            elemente[3] = 20;
+            elemente[4] = 20;
+            elemente[5] = 10;
+            elemente[6] = 10;
+            elemente[7] = 10;
+            elemente[8] = 50;
+            elemente[9] = 50;
+
+                <!--Funktion id "anzeige"-->
+                function btnDurchschnitt()
+                {
+                    <!--1. Wert zuweisung der Variable summe-->
+                    var summe = elemente[0] + elemente[1] + elemente[2] + elemente[3] + elemente[4] + elemente[5] + elemente[7] + elemente[8] + elemente[9];
+
+                    <!--2. Wert zuweisung der Variable anzahl-->
+                    var anzahl = elemente.length;
+
+                    <!--3. Wert zuweisung der Variable ergebnis-->
+                    var ergebnis = summe / anzahl;
+
+                    <!--4. Wert zuweisung der Variable text-->
+                    var text = "Der Durchschnitt des Arrays beträgt " + ergebnis + ".";
+
+                    <!--5. Übergabe der variable text an id "anzeige"-->
+                    var convert = document.getElementById("anzeige").innerHTML = text;
+                    convert.getElementById("anzeige").innerHTML = text;
+
+                }
+
+
+                function btnAnzahl()
+                {
+                    <!--1. Wert zuweisung der Variable anzahl1-->
+                    var anzahl1 = elemente.length;
+
+                    <!--2. Wert zuweisung der Variable text1-->
+                    var text1 = "Die Anzahl Elemente die im Array gespeichert sind, beträgt " + anzahl1 + ".";
+
+                    <!--3. Übergabe der Variable text1 an id "nr"-->
+                    var nr1 = document.getElementById("nr").innerHTML = text1;
+                        nr1.getElementById("nr").innerHTML = text1;
+
+                }
+
+                <!--Funktion id "total"-->
+                function btnSumme()
+                {
+
+                    <!--1. Wert zuweisung der Variable summe1-->
+                    var summe1 = elemente[0] + elemente[1] + elemente[2] + elemente[3] + elemente[4] + elemente[5] + elemente[7] + elemente[8] + elemente[9];
+
+                    <!--2. Wert zuweisung der Variable text2-->
+                    var text2 = "Die der Werte die im Array gespeichert sind, beträgt " + summe1 + ".";
+
+                    <!--3. Übergabe der Variable nr2 an id "total"-->
+                    var nr2 = document.getElementById("total").innerHTML = text2;
+                    nr2.getElementById("total").innerHTML = text2;
+
+                }
+
+
+            <!--Ende der Logik der Buttons-->
+        </script>
+
+    </body>
+</html>

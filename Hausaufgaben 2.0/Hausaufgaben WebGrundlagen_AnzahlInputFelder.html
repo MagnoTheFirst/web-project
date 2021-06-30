@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <title>AnzahlInputFelder</title>
+    </head>
+
+    <body>
+        <!-- Initialisierung der List Elemente-->
+        <ul>
+            <li><label>Vollständiger Name</label><br>
+                <textarea name="VName" placeholder="50 zeichen"  required></textarea></li>
+
+            <li><label>E-Mail-Adresse:</label><br>
+                <textarea name="Email" placeholder="beispiel.test@outlook.com" required></textarea></li>
+
+            <li><label>Datum der Anreise</label><br>
+                <textarea name="Date" placeholder="DD.MM.YY" required></textarea> </li>
+
+            <li><label>Anzahl Übernachtungen <br>(Zimmerpreis 99 US-Dollar pro Nacht): </label><br>
+                <textarea name="NoNights"></textarea></li>
+
+            <li><label>Anzahl Gäste <br> (jeder zusätzliche Gast wird mit 10 US-Dollar pro Nacht berechnet): </label><br>
+                <textarea name="NoNights"></textarea></li>
+
+            <p>Vorläufige Gesammtsumme: <!--Variable--></p>
+
+            <P><li><label>Gutscheincode:</label><br>
+            <textarea name="BonNo" ></textarea></li></P>
+
+            <!--Test um zu prüfen ob die Anzahl sich auch wirklich verändert
+            <P><li><label>Test</label><br>
+            <textarea name="Test" ></textarea></li></P>
+            -->
+            <!--
+            <li><label>Passwort</label><br>
+            <input type="password" name="pswd" max-length="10" id="form-pswd" required></li>
+            -->
+
+        </ul>
+            <!-- Deklarierung des Button Elements durch onclick wird bestimmt dass beim des Buttons
+            die funktion btn gestartet werden soll-->
+            <button onclick="btn()">Anzahl Felder</button>
+
+        <!-- Paragraf der nach clicken des Buttons die Variablle anzeige übernimmt und wiedergibt-->
+        <p id="Schriftzug"></p>
+
+            <script type="text/javascript">
+
+                /*
+                *deklaration der Variable nrOfTfields durch (document.getElementsByTagName("textarea").length;)
+                *wird die Anzahl der angezeigten textareas gezählt und in einem Array gespeichert
+                */
+                var nrOfTfields = document.getElementsByTagName("textarea").length;
+                /*Die Variable nrOfTFields berechnet durch die methode childElementCount die Anzahl
+                 * an Textfeldern dieser Wert wird der Variable zugeteilt */
+                nrOfTfields.getElementsByTagName("textarea").childElementCount.innerHTML = nrOfTfields;
+                /*Die function btn bstimmt was geschieht wenn der Button geclickt wird. */
+                function btn()
+                {
+                    /*Deklarierung der Variablen für die Anzeige*/
+                    var str = "Auf dieser Seite werden ";
+                    var str1 = " Eingabefelder angezeigt";
+                    /*Concatenation des Strings damit die Anzeige nicht nur aus einer Zahl
+                    * besteht*/
+                    var anzeige = str.concat(nrOfTfields, str1);
+
+                    /*Pop Up fenster das die Variable anzeige wiedergibt*/
+                    alert(anzeige);
+
+                    /*An diesem Teil wird der ID Schriftzug der Wert der Variable anzeige zugeordnet*/
+                    document.getElementById("Schriftzug").innerHTML = anzeige;
+                }
+        </script>
+
+    </body>
+
+</html>
